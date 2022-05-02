@@ -1,0 +1,47 @@
+.contato {
+  margin-top: 40px;
+}
+.contato-itens {
+  grid-column: 2 / -1;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  @include tipo-1(18);
+}
+
+input,
+textarea {
+  background-color: transparent;
+  outline: none;
+  border: 2px solid $bege-escuro;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+
+  &:hover {
+    border: 2px solid $bege-medio;
+  }
+
+  &:placeholder-shown {
+    @include tipo-1(18);
+  }
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $bege-medio;
+  @include tipo-1(18);
+  border: 1px solid $bege;
+  padding: 15px 30px;
+}
+
+.btn {
+  margin-top: 30px;
+}
+
+.mapa {
+  border: 10px solid $bege-medio;
+}

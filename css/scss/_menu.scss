@@ -1,13 +1,37 @@
 .menu img {
   border: 10px solid $bege-medio;
   border-radius: 50%;
+  margin-top: 20px;
 }
 
 .menu {
   margin-top: 40px;
 }
 
-.grid-menu li {
+.menu li {
   display: flex;
-  gap: 20px;
+  place-items: center;
+  gap: 10px;
+}
+
+.menu span {
+  color: $bege;
+  @include tipo-2(18);
+}
+
+.menu p {
+  @include tipo-2(18);
+}
+
+.menu h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.secao-area {
+  place-self: start center;
+}
+
+.grid-menu .principais {
+  grid-column: 2;
 }

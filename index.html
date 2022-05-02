@@ -45,14 +45,13 @@
     </main>
 
     <section class="container menu">
-      <div class="grid-menu">
-        <div>
-          <h1>Menu</h1>
+      <div class="container grid-menu">
+        <div class="secao-area">
+          <h2>Menu</h2>
         </div>
-        <div class="menu-entradas">
-          <h2>Entradas</h2>
-
+        <div class="menu-itens entradas">
           <ul>
+            <h3>Entradas</h3>
             <li>
               <span>R$1,70</span>
               <p>Ovos mexidos</p>
@@ -79,9 +78,9 @@
           <img src="./img/prato-1.png" alt="" />
         </div>
 
-        <div class="menu-principais">
-          <h2>Pratos principais</h2>
+        <div class="menu-itens principais">
           <ul>
+            <h3>Pratos principais</h3>
             <li>
               <span>R$10,70</span>
               <p>Penne com queijo</p>
@@ -111,42 +110,49 @@
     </section>
 
     <section class="container contato">
-      <div>
-        <h2>Contato</h2>
-      </div>
-      <form class="form" action="post">
-        <div>
-          <label for="nome">Nome</label>
-          <input type="text" />
+      <div class="container contato-grid">
+        <div class="secao-area">
+          <h2>Contato</h2>
         </div>
+        <form class="form" action="post">
+          <div>
+            <label for="nome">Nome</label>
+            <input type="text" placeholder="Nome completo" />
+          </div>
 
-        <div>
-          <label for="email">Email</label>
-          <input type="email" />
+          <div>
+            <label for="email">Email</label>
+            <input type="email" placeholder="email@email.com" />
+          </div>
+
+          <div>
+            <label for="Telefone">Telefone</label>
+            <input type="number" placeholder="(00) 9999-9999" />
+          </div>
+
+          <div>
+            <label for="mensagem">Mensagem</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+          <div class="btn">
+            <a href="#">Enviar</a>
+          </div>
+        </form>
+        <div class="contato-itens">
+          <div class="lista-contatos">
+            <p>contato@lescone.com</p>
+            <p>+55 021 2412-3333</p>
+          </div>
+          <img class="mapa" src="./img/map.png" alt="Mapa" />
         </div>
-
-        <div>
-          <label for="Telefone">Telefone</label>
-          <input type="number" />
-        </div>
-
-        <div>
-          <label for="mensagem">Mensagem</label>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-        </div>
-
-        <a href="#">Enviar</a>
-      </form>
-      <div>
-        <span style="display: block">contato@lescone.com</span>
-        <span style="display: block">+55 021 2412-3333</span>
-        <img src="./img/map.png" alt="Mapa" />
       </div>
     </section>
 
-    <footer>
-      <p>Le Scone © 1989 - 2022. Alguns direitos reservados</p>
-      <img class="icone" src="./img/lescone-icone.png" alt="" />
+    <footer class="footer">
+      <div class="container footer-info">
+        <p>Le Scone © 1989 - 2022. Alguns direitos reservados</p>
+        <img class="icone" src="./img/lescone-icone.png" alt="" />
+      </div>
     </footer>
   </body>
 </html>

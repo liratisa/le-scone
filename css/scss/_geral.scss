@@ -17,3 +17,28 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.container {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+h2 {
+  @include tipo-1(18);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    display: inline-block;
+    content: "";
+    width: 400px;
+    height: 1.5px;
+    background: $bege-escuro;
+    margin-left: 10px;
+  }
+}
+
+h3 {
+  @include tipo-2(24);
+}

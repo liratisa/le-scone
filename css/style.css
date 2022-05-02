@@ -3,27 +3,26 @@
   display: grid;
   grid-template-columns: 5fr 7fr;
   justify-items: center;
-  padding-top: 50px;
-  margin-top: 60px;
+  margin: 80px 0;
 }
 
-/* line 42, ../../../../../Desktop/le scone/css/scss/_grid.scss */
+/* line 41, ../../../../../Desktop/le scone/css/scss/_grid.scss */
 .grid-menu {
   display: grid;
-  grid-template-columns: 4fr 2fr 2fr;
-  padding: 50px 0;
+  grid-template-columns: 5fr 6fr 3fr;
   justify-items: center;
-  gap: 40px;
+  max-width: 90%;
 }
 
-/* line 50, ../../../../../Desktop/le scone/css/scss/_grid.scss */
-.menu-principais {
-  grid-column: 2;
+/* line 48, ../../../../../Desktop/le scone/css/scss/_grid.scss */
+.contato-grid {
+  display: grid;
+  grid-template-columns: 5fr 9fr;
 }
 
-/* line 54, ../../../../../Desktop/le scone/css/scss/_grid.scss */
-.menu-principais img {
-  grid-column: 3;
+/* line 53, ../../../../../Desktop/le scone/css/scss/_grid.scss */
+form {
+  margin-left: 30px;
 }
 
 /* line 1, ../../../../../Desktop/le scone/css/scss/_geral.scss */
@@ -51,6 +50,39 @@ body {
 img {
   display: block;
   max-width: 100%;
+}
+
+/* line 21, ../../../../../Desktop/le scone/css/scss/_geral.scss */
+.container {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+/* line 26, ../../../../../Desktop/le scone/css/scss/_geral.scss */
+h2 {
+  font-family: "PT Mono", monospace;
+  font-size: 1.1rem;
+  line-height: 30px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+/* line 32, ../../../../../Desktop/le scone/css/scss/_geral.scss */
+h2::after {
+  display: inline-block;
+  content: "";
+  width: 400px;
+  height: 1.5px;
+  background: #2a2426;
+  margin-left: 10px;
+}
+
+/* line 42, ../../../../../Desktop/le scone/css/scss/_geral.scss */
+h3 {
+  font-family: "Aref Ruqaa", serif;
+  font-size: 1.5rem;
+  line-height: 30px;
 }
 
 /* line 1, ../../../../../Desktop/le scone/css/scss/_introducao.scss */
@@ -109,17 +141,145 @@ img {
 .menu img {
   border: 10px solid #cbc6b9;
   border-radius: 50%;
+  margin-top: 20px;
 }
 
-/* line 6, ../../../../../Desktop/le scone/css/scss/_menu.scss */
+/* line 7, ../../../../../Desktop/le scone/css/scss/_menu.scss */
 .menu {
   margin-top: 40px;
 }
 
-/* line 10, ../../../../../Desktop/le scone/css/scss/_menu.scss */
-.grid-menu li {
+/* line 11, ../../../../../Desktop/le scone/css/scss/_menu.scss */
+.menu li {
   display: flex;
-  gap: 20px;
+  place-items: center;
+  gap: 10px;
+}
+
+/* line 17, ../../../../../Desktop/le scone/css/scss/_menu.scss */
+.menu span {
+  color: #988c77;
+  font-family: "Aref Ruqaa", serif;
+  font-size: 1.1rem;
+  line-height: 30px;
+}
+
+/* line 22, ../../../../../Desktop/le scone/css/scss/_menu.scss */
+.menu p {
+  font-family: "Aref Ruqaa", serif;
+  font-size: 1.1rem;
+  line-height: 30px;
+}
+
+/* line 26, ../../../../../Desktop/le scone/css/scss/_menu.scss */
+.menu h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* line 31, ../../../../../Desktop/le scone/css/scss/_menu.scss */
+.secao-area {
+  place-self: start center;
+}
+
+/* line 35, ../../../../../Desktop/le scone/css/scss/_menu.scss */
+.grid-menu .principais {
+  grid-column: 2;
+}
+
+/* line 1, ../../../../../Desktop/le scone/css/scss/_contato.scss */
+.contato {
+  margin-top: 40px;
+}
+
+/* line 4, ../../../../../Desktop/le scone/css/scss/_contato.scss */
+.contato-itens {
+  grid-column: 2 / -1;
+}
+
+/* line 8, ../../../../../Desktop/le scone/css/scss/_contato.scss */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "PT Mono", monospace;
+  font-size: 1.1rem;
+  line-height: 30px;
+}
+
+/* line 14, ../../../../../Desktop/le scone/css/scss/_contato.scss */
+input,
+textarea {
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #2a2426;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 23, ../../../../../Desktop/le scone/css/scss/_contato.scss */
+input:hover,
+textarea:hover {
+  border: 2px solid #cbc6b9;
+}
+
+/* line 27, ../../../../../Desktop/le scone/css/scss/_contato.scss */
+input:placeholder-shown,
+textarea:placeholder-shown {
+  font-family: "PT Mono", monospace;
+  font-size: 1.1rem;
+  line-height: 30px;
+}
+
+/* line 32, ../../../../../Desktop/le scone/css/scss/_contato.scss */
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #cbc6b9;
+  font-family: "PT Mono", monospace;
+  font-size: 1.1rem;
+  line-height: 30px;
+  border: 1px solid #988c77;
+  padding: 15px 30px;
+}
+
+/* line 41, ../../../../../Desktop/le scone/css/scss/_contato.scss */
+.btn {
+  margin-top: 30px;
+}
+
+/* line 45, ../../../../../Desktop/le scone/css/scss/_contato.scss */
+.mapa {
+  border: 10px solid #cbc6b9;
+}
+
+/* line 1, ../../../../../Desktop/le scone/css/scss/_footer.scss */
+footer p {
+  font-family: "PT Mono", monospace;
+  font-size: 1.1rem;
+  line-height: 30px;
+  color: #edece4;
+  padding: 20px;
+}
+
+/* line 7, ../../../../../Desktop/le scone/css/scss/_footer.scss */
+footer {
+  border-left: 10px solid #2a2426;
+  background-color: #2a2426;
+  margin-top: 40px;
+}
+
+/* line 13, ../../../../../Desktop/le scone/css/scss/_footer.scss */
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 19, ../../../../../Desktop/le scone/css/scss/_footer.scss */
+.icone {
+  height: 100%;
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
