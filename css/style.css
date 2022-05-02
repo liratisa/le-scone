@@ -1,0 +1,125 @@
+/* line 34, ../../../../../Desktop/le scone/css/scss/_grid.scss */
+.grid-intro {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  justify-items: center;
+  padding-top: 50px;
+  margin-top: 60px;
+}
+
+/* line 42, ../../../../../Desktop/le scone/css/scss/_grid.scss */
+.grid-menu {
+  display: grid;
+  grid-template-columns: 4fr 2fr 2fr;
+  padding: 50px 0;
+  justify-items: center;
+  gap: 40px;
+}
+
+/* line 50, ../../../../../Desktop/le scone/css/scss/_grid.scss */
+.menu-principais {
+  grid-column: 2;
+}
+
+/* line 54, ../../../../../Desktop/le scone/css/scss/_grid.scss */
+.menu-principais img {
+  grid-column: 3;
+}
+
+/* line 1, ../../../../../Desktop/le scone/css/scss/_geral.scss */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* line 7, ../../../../../Desktop/le scone/css/scss/_geral.scss */
+body {
+  background-color: #edece4;
+  border: 10px solid #cbc6b9;
+  color: #2a2426;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 7, ../../../../../Desktop/le scone/css/scss/_geral.scss */
+  body {
+    border: none;
+  }
+}
+
+/* line 16, ../../../../../Desktop/le scone/css/scss/_geral.scss */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* line 1, ../../../../../Desktop/le scone/css/scss/_introducao.scss */
+.intro {
+  font-family: "PT Mono", monospace;
+  font-family: "PT Mono", monospace;
+  font-size: 1.1rem;
+  line-height: 30px;
+}
+
+/* line 6, ../../../../../Desktop/le scone/css/scss/_introducao.scss */
+.foto-intro {
+  border: 10px solid #cbc6b9;
+}
+
+/* line 10, ../../../../../Desktop/le scone/css/scss/_introducao.scss */
+.informacoes {
+  margin-top: 60px;
+  font-weight: normal;
+}
+
+/* line 15, ../../../../../Desktop/le scone/css/scss/_introducao.scss */
+.informacoes div:first-child {
+  border-bottom: 2px solid #2a2426;
+  border-right: 2px solid #2a2426;
+  padding-bottom: 10px;
+}
+
+/* line 21, ../../../../../Desktop/le scone/css/scss/_introducao.scss */
+.informacoes div:nth-child(2) {
+  border-right: 2px solid #2a2426;
+  padding: 15px 30px 0 0;
+}
+
+/* line 26, ../../../../../Desktop/le scone/css/scss/_introducao.scss */
+.telefone {
+  color: #988c77;
+}
+
+/* line 30, ../../../../../Desktop/le scone/css/scss/_introducao.scss */
+.coluna-1 {
+  position: relative;
+}
+
+/* line 34, ../../../../../Desktop/le scone/css/scss/_introducao.scss */
+.coluna-1::after {
+  position: absolute;
+  content: "////";
+  display: block;
+  margin-top: 200px;
+  font-size: 13.75rem;
+  letter-spacing: -50px;
+}
+
+/* line 1, ../../../../../Desktop/le scone/css/scss/_menu.scss */
+.menu img {
+  border: 10px solid #cbc6b9;
+  border-radius: 50%;
+}
+
+/* line 6, ../../../../../Desktop/le scone/css/scss/_menu.scss */
+.menu {
+  margin-top: 40px;
+}
+
+/* line 10, ../../../../../Desktop/le scone/css/scss/_menu.scss */
+.grid-menu li {
+  display: flex;
+  gap: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

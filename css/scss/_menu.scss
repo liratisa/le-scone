@@ -1,0 +1,13 @@
+.menu img {
+  border: 10px solid $bege-medio;
+  border-radius: 50%;
+}
+
+.menu {
+  margin-top: 40px;
+}
+
+.grid-menu li {
+  display: flex;
+  gap: 20px;
+}

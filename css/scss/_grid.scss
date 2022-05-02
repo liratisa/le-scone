@@ -1,0 +1,56 @@
+// variáveis do grid
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 767px;
+
+// mixins
+
+@mixin device($size) {
+  @if $size == desktop {
+    @media screen and (max-width: $desktop) {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+      @content;
+    }
+  } @else if $size == mobile {
+    @media screen and (max-width: $mobile) {
+      @content;
+    }
+  }
+}
+
+// p {
+//   color: aquamarine;
+//   @include device(tablet) {
+//     color: pink;
+//   }
+//   @include device(mobile) {
+//     color: purple;
+//   }
+// }
+
+.grid-intro {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  justify-items: center;
+  padding-top: 50px;
+  margin-top: 60px;
+}
+
+.grid-menu {
+  display: grid;
+  grid-template-columns: 4fr 2fr 2fr;
+  padding: 50px 0;
+  justify-items: center;
+  gap: 40px;
+}
+
+.menu-principais {
+  grid-column: 2;
+}
+
+.menu-principais img {
+  grid-column: 3;
+}

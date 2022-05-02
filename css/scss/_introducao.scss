@@ -1,0 +1,41 @@
+.intro {
+  font-family: $fonte-primaria;
+  @include tipo-1(18);
+}
+
+.foto-intro {
+  border: 10px solid $bege-medio;
+}
+
+.informacoes {
+  margin-top: 60px;
+  font-weight: normal;
+}
+
+.informacoes div:first-child {
+  border-bottom: 2px solid $bege-escuro;
+  border-right: 2px solid $bege-escuro;
+  padding-bottom: 10px;
+}
+
+.informacoes div:nth-child(2) {
+  border-right: 2px solid $bege-escuro;
+  padding: 15px 30px 0 0;
+}
+
+.telefone {
+  color: $bege;
+}
+
+.coluna-1 {
+  position: relative;
+}
+
+.coluna-1::after {
+  position: absolute;
+  content: "////";
+  display: block;
+  margin-top: 200px;
+  font-size: 13.75rem;
+  letter-spacing: -50px;
+}
