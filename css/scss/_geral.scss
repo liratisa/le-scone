@@ -19,8 +19,8 @@ img {
 }
 
 .container {
+  max-width: 1200px;
   margin: 0 auto;
-  max-width: 90%;
 }
 
 h2 {
@@ -32,10 +32,10 @@ h2 {
   &::after {
     display: inline-block;
     content: "";
-    width: 400px;
+    width: 300px;
     height: 1.5px;
     background: $bege-escuro;
-    margin-left: 10px;
+    margin: 0 20px;
   }
 }
 

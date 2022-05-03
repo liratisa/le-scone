@@ -31,25 +31,9 @@ $mobile: 767px;
 //   }
 // }
 
-.grid-intro {
+.grid {
   display: grid;
   grid-template-columns: 5fr 7fr;
-  justify-items: center;
-  margin: 80px 0;
-}
-
-.grid-menu {
-  display: grid;
-  grid-template-columns: 5fr 6fr 3fr;
-  justify-items: center;
-  max-width: 90%;
-}
-
-.contato-grid {
-  display: grid;
-  grid-template-columns: 5fr 9fr;
-}
-
-form {
-  margin-left: 30px;
+  gap: 40px;
+  justify-content: center;
 }

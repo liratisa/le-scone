@@ -26,22 +26,44 @@ textarea {
 
   &:placeholder-shown {
     @include tipo-1(18);
+    padding-left: 10px;
   }
 }
 
 a {
   text-decoration: none;
   text-transform: uppercase;
-  color: $bege-medio;
+  color: $bege;
   @include tipo-1(18);
-  border: 1px solid $bege;
-  padding: 15px 30px;
 }
 
 .btn {
-  margin-top: 30px;
+  cursor: pointer;
+  padding: 10px 70px;
+  background: transparent;
+  border: 2px solid $bege;
+  box-shadow: 5px 5px 0 -2px #cbc6b9, 5px 5px 0 0 #988c77;
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: 1px 1px 0 -2px #cbc6b9, 1px 1px 0 0 #988c77;
+    transition: all 0.3s;
+  }
 }
 
 .mapa {
   border: 10px solid $bege-medio;
+  width: 100%;
+}
+
+.lista-contatos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.lista-contatos p {
+  @include tipo-1(18);
+  color: $bege;
 }

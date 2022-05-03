@@ -1,13 +1,14 @@
-footer p {
-  @include tipo-1(18);
-  color: $bege-claro;
-  padding: 20px;
-}
-
 footer {
   border-left: 10px solid $cinza;
   background-color: $cinza;
   margin-top: 40px;
+  box-shadow: 0 0 0 10px $cinza;
+
+  p {
+    @include tipo-1(18);
+    color: $bege-claro;
+    padding: 20px;
+  }
 }
 
 .footer-info {

@@ -1,37 +1,43 @@
-.menu img {
-  border: 10px solid $bege-medio;
-  border-radius: 50%;
-  margin-top: 20px;
-}
-
 .menu {
   margin-top: 40px;
+
+  img {
+    border: 10px solid $bege-medio;
+    border-radius: 50%;
+  }
+
+  li {
+    position: relative;
+    margin-right: 210px;
+  }
+
+  span {
+    position: absolute;
+    left: -65px;
+    color: $bege;
+    @include tipo-2(18);
+  }
+
+  p {
+    @include tipo-2(18);
+  }
+
+  h3 {
+    margin-bottom: 10px;
+  }
 }
 
-.menu li {
-  display: flex;
-  place-items: center;
-  gap: 10px;
-}
-
-.menu span {
-  color: $bege;
-  @include tipo-2(18);
-}
-
-.menu p {
-  @include tipo-2(18);
-}
-
-.menu h3 {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.secao-area {
-  place-self: start center;
-}
-
-.grid-menu .principais {
+.grid .principais {
   grid-column: 2;
+}
+
+.menu-itens {
+  display: flex;
+  align-items: center;
+  place-self: start;
+  justify-content: space-around;
+}
+
+.entradas {
+  margin-bottom: 40px;
 }
