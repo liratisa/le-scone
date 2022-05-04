@@ -11,6 +11,9 @@ body {
   @include device(mobile) {
     border: none;
   }
+  @include device(tablet) {
+    border: none;
+  }
 }
 
 img {
@@ -21,6 +24,16 @@ img {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+
+  @include device(tablet) {
+    max-width: 767px;
+    padding: 20px;
+  }
+
+  @include device(mobile) {
+    max-width: 767px;
+    padding: 20px;
+  }
 }
 
 h2 {

@@ -30,6 +30,7 @@
 
 .coluna-1 {
   position: relative;
+  max-width: 60%;
 
   &::after {
     position: absolute;
@@ -38,5 +39,32 @@
     margin-top: 200px;
     font-size: 13.75rem;
     letter-spacing: -50px;
+  }
+
+  @include device(tablet) {
+    &::after {
+      display: none;
+    }
+  }
+  @include device(mobile) {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.horario-funcionamento {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    background-color: rgb(44, 202, 44);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 8px;
+    left: 165px;
   }
 }

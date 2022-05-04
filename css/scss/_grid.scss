@@ -21,19 +21,18 @@ $mobile: 767px;
   }
 }
 
-// p {
-//   color: aquamarine;
-//   @include device(tablet) {
-//     color: pink;
-//   }
-//   @include device(mobile) {
-//     color: purple;
-//   }
-// }
-
 .grid {
   display: grid;
   grid-template-columns: 5fr 7fr;
   gap: 40px;
   justify-content: center;
+
+  @include device(tablet) {
+    display: flex;
+    flex-direction: column;
+  }
+  @include device(mobile) {
+    display: flex;
+    flex-direction: column;
+  }
 }

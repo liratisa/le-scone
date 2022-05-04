@@ -61,6 +61,20 @@ a {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
+
+  @include device(mobile) {
+    display: flex;
+    flex-direction: column;
+
+    .btn {
+      margin-bottom: 20px;
+    }
+
+    :nth-child(2),
+    .btn {
+      place-self: start;
+    }
+  }
 }
 
 .lista-contatos p {

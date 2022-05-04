@@ -36,6 +36,18 @@
   align-items: center;
   place-self: start;
   justify-content: space-around;
+
+  @include device(mobile) {
+    padding-left: 60px;
+
+    ul {
+      width: 767px;
+    }
+
+    img {
+      display: none;
+    }
+  }
 }
 
 .entradas {
